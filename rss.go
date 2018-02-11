@@ -63,7 +63,7 @@ type RssFeed struct {
 	AtomLink       *RssAtomLink
 	Title          string `xml:"title"`       // required
 	Link           string `xml:"link"`        // required
-	Description    string `xml:"description"` // required
+	Description    string `xml:"description,cdata"` // required
 	Language       string `xml:"language,omitempty"`
 	Copyright      string `xml:"copyright,omitempty"`
 	ManagingEditor string `xml:"managingEditor,omitempty"` // Author used
