@@ -86,7 +86,7 @@ type Atom struct {
 func newAtomEntry(i *Item) *AtomEntry {
 	id := i.Id
 	// assume the description is html
-	c := &AtomContent{Content: i.Description, Type: "html"}
+	c := &AtomContent{Content: i.Description.Text, Type: "html"}
 
 	if len(id) == 0 {
 		// if there's no id set, try to create one, either from data or just a uuid

@@ -24,8 +24,8 @@ type Item struct {
 	Title       string
 	Link        *Link
 	Author      *Author
-	Description string // used as description in rss, summary in atom
-	Id          string // used as guid in rss, id in atom
+	Description *Description // used as description in rss, summary in atom
+	Id          string       // used as guid in rss, id in atom
 	Updated     time.Time
 	Created     time.Time
 	Image       *Image
